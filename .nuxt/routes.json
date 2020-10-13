@@ -1,0 +1,26 @@
+[
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "C:\\\\Users\\\\cecelia\\\\workspace\\\\ceceliacreates-nuxt\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index"
+  },
+  {
+    "name": "talks",
+    "path": "/talks",
+    "component": "C:\\\\Users\\\\cecelia\\\\workspace\\\\ceceliacreates-nuxt\\\\pages\\\\talks.vue",
+    "chunkName": "pages/talks"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug",
+    "component": "C:\\\\Users\\\\cecelia\\\\workspace\\\\ceceliacreates-nuxt\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\cecelia\\\\workspace\\\\ceceliacreates-nuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
