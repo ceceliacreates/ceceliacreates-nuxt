@@ -1,15 +1,22 @@
 <template>
-  <article>
-    <h1>{{ article.title }}</h1>
-    <p>{{ article.description }}</p>
+<v-app>
+   <Navigation />
+   <v-main>
+     <v-container fluid fill-height id="main">
+  <article class="ma-3 pa-3">
+    <h1 class="text-h2">{{ article.title }}</h1>
+    <p class="text-subtitle-1">{{ article.description }}</p>
     <img
       :src="article.img"
       :alt="article.alt"
     />
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+    <p class="font-italic">Article last updated: {{ formatDate(article.updatedAt) }}</p>
 
-    <nuxt-content :document="article" />
+    <nuxt-content class="text-body-1 mx-3" :document="article" />
   </article>
+     </v-container>
+   </v-main>
+</v-app>
 </template>
 
 <script>
@@ -29,5 +36,21 @@
 </script>
 
 <style>
- 
+ img {
+   max-width: 800px;
+   max-height: 600px;
+ }
+  h2 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .nuxt-content h3 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
 </style>
