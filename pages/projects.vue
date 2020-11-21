@@ -3,7 +3,7 @@
     <Navigation />
     <v-content>
       <v-container fluid>
-        Talks page
+        Projects page
       </v-container>
     </v-content>
     <v-footer app>Footer</v-footer>
