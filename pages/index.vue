@@ -39,6 +39,11 @@
                     >mdi-linkedin</v-icon
                   ></a
                 >
+                <a href="https://www.twitch.tv/ceceliacreates" target="blank"
+                  ><v-icon class="ma-2" color="white" large
+                    >mdi-twitch</v-icon
+                  ></a
+                >
               </h4>
             </v-col>
           </v-row>
