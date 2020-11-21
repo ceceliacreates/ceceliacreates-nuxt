@@ -77,10 +77,17 @@ console.log("App running on port" + PORT)})
 
 <ul>
 <li>
-app.use(express.urlencoded({extended:true}));</li>
-<li>
-app.use(express.json());</li>
-<li> Ex. <img src="https://thepracticaldev.s3.amazonaws.com/i/sxei5ro0erq47xjun41e.PNG" alt="code screenshot"></li>
+Depending on what type of requests your API will expect, you'll need to enable middleware to parse JSON or URLencoded requests. You can do this with app.use().
+</li>
+
+``` javascript
+
+// handle URLencoded requests
+app.use(express.urlencoded ({ extended: true }))
+
+// handle JSON requests
+app.use(express.json());
+```
 </ul>
 
 ## Enable automatic return of static files
@@ -89,13 +96,10 @@ app.use(express.json());</li>
 <li>
 Set up app to automatically return static files without having to write a specific route for each file (ex. a "public" folder that has your HTML, CSS, and client-side JS files)
 </li>
-<li>
-app.use(express.static("public"));</li>
 
 ``` javascript
 app.use(express.static("public"));
 ```
-
 </ul>
 
 ## Handle REST requests
@@ -103,11 +107,6 @@ app.use(express.static("public"));
 Write routes to handle REST requests to paths (GET, POST, PUT, DELETE). Each route requires a callback function that states what to do with the request and, if applicable, the response. I have written out example callback functions for GET and POST, as these are the most common.
 
 ### GET
-
-<ul>
-<li>
-app.get("path", function (req, res) { res.send("Hello World!") || res.sendFile("../public/index.html")) })
-</li>
 
 ``` javascript
 app.get("path, function (req, res) {
@@ -120,22 +119,40 @@ res.send("Hello World!")
 res.sendFile(path.join(__dirname, "../public/index.html"))})
 ```
 
-</ul>
+### POST
 
-<ul>
-<li>
-app.post("path", function (req, res) { const request = req.body; SEND REQUEST TO DATABASE AND GET RESPONSE HERE}).then(function (response) { res.json(response)})
-</li>
-<li> Ex. <img src="https://thepracticaldev.s3.amazonaws.com/i/doysdxrflca7n4encgpv.PNG" alt="code screenshot"></li>
-<li>
-app.put("path", function (req, res) {handle request})
-</li>
-<li> Ex. <img src="https://thepracticaldev.s3.amazonaws.com/i/rbiw3iiiuqioakevnx9d.PNG" alt = "code screenshot"></li>
-<li>
-app.delete("path", function (req, res) {handle request})
-</li>
-<li> Ex. <img src="https://thepracticaldev.s3.amazonaws.com/i/vgoowtpoo16hxirlftvv.PNG" alt="code screenshot"></li>
-</ul>
-</ol>
+``` javascript
+
+app.post("path", function (req, res) {
+
+const request = req.body;
+...
+// handle database update
+}).then(function (response) {
+res.json(response)
+})
+```
+
+### PUT
+
+``` javascript
+
+app.put("path, function (req, res) {
+
+...
+// handle database update
+}).then(function (response) {
+res.json(response)
+})
+```
+### DELETE
+
+``` javascript
+app.delete("path", function (req, res) {
+...
+// handle database update
+}).then(function (response) {
+res.json(response)
+```
 
 <p>That’s it! As long as you understand how these functions work you have a basic understanding of Express and can set up a server for full stack applications. Please let me know if you have any questions or suggestions!</p>
