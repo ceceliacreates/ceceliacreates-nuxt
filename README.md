@@ -20,8 +20,12 @@ Working off https://nuxtjs.org/blog/creating-blog-with-nuxt-content
 
 ### Home
 
-![home-screenshot](https://github.com/ceceliacreates/ceceliacreates-nuxt/blob/main/assets/images/screenshot.PNG?raw=true)
+![home-screenshot](https://github.com/ceceliacreates/ceceliacreates-nuxt/blob/main/assets/images/screenshot.PNG)
+
+### Blog List
+
+![home-screenshot](https://github.com/ceceliacreates/ceceliacreates-nuxt/blob/main/assets/images/blog-list-screenshot.PNG)
 
 ### Blog Post
 
-![blog-post-screenshot](https://github.com/ceceliacreates/ceceliacreates-nuxt/blob/main/assets/images/blog-screenshot.PNG?raw=true)
+![blog-post-screenshot](https://github.com/ceceliacreates/ceceliacreates-nuxt/blob/main/assets/images/blog-screenshot.PNG)
