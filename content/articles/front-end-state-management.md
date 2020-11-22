@@ -1,7 +1,7 @@
 ---
-title: The Back End of the Front End - State Management
+title: Front End State Management
 description: An overview of state management in front-end applications
-img: https://source.unsplash.com/G9dTk2zOB54/
+img: https://source.unsplash.com/UOJ6vz2khrY/
 alt: blog post image alt text
 tags:
   - redux
@@ -11,7 +11,7 @@ tags:
 
 # The Back End of the Front End - State Management
 
-## This is the first part of a three-part series. This series focuses on JavaScript development, however many concepts translate to other languages. It was original published on the [Women Who Code Blog](https://www.womenwhocode.com/blog/the-back-end-of-the-front-end-state-part-1).
+This is the first part of a three-part series. This series focuses on JavaScript development, however many concepts translate to other languages. It was original published on the [Women Who Code Blog](https://www.womenwhocode.com/blog/the-back-end-of-the-front-end-state-part-1).
 
 ## What is State?
 

@@ -1,5 +1,5 @@
 ---
-title: The Back End of the Front End - APIs
+title: Front End APIs
 description: An overview of interacting with APIs from your front-end application
 img: https://source.unsplash.com/MtqG1lWcUw0/
 alt: blog post image alt text
@@ -12,7 +12,7 @@ tags:
 
 # The Back End of the Front End - APIs
 
-This is the second in a three-part series about front-end development. It is focused on JavaScript, but many of the concepts here translate to other languages.
+This is the second in a three-part series about front-end development. It is focused on JavaScript, but many of the concepts here translate to other languages. It was original published on the [Women Who Code Blog](https://www.womenwhocode.com/blog/the-back-end-of-the-front-end-state-part-2).
 
 ## What is an API?
 
