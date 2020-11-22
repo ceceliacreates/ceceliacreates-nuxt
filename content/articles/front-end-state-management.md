@@ -1,5 +1,5 @@
 ---
-title: Front End State Management
+title: The Back End of the Front End - State Management
 description: An overview of state management in front-end applications
 img: https://source.unsplash.com/UOJ6vz2khrY/
 alt: blog post image alt text

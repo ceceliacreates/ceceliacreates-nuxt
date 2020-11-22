@@ -1,5 +1,5 @@
 ---
-title: Front End APIs
+title: The Back End of the Front End - APIs
 description: An overview of interacting with APIs from your front-end application
 img: https://source.unsplash.com/MtqG1lWcUw0/
 alt: blog post image alt text

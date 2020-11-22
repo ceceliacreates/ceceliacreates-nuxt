@@ -1,5 +1,5 @@
 ---
-title: Create Multiple GitHub Issues
+title: Create Multiple GitHub Issues Automatically with Node and the GitHub API
 description: How to create GitHub issues automatically from a JSON file using Node, Node-Fetch, the GitHub API, and dotenv.
 img: https://source.unsplash.com/MAYEkmn7G6E/
 alt: blog post image alt text

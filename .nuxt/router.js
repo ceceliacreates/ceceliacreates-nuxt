@@ -5,8 +5,9 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _3adda1cd = () => interopDefault(import('..\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _4683986d = () => interopDefault(import('..\\pages\\projects.vue' /* webpackChunkName: "pages/projects" */))
-const _032513e4 = () => interopDefault(import('..\\pages\\talks.vue' /* webpackChunkName: "pages/talks" */))
+const _566dd81e = () => interopDefault(import('..\\pages\\talks\\index.vue' /* webpackChunkName: "pages/talks/index" */))
 const _39270085 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
+const _54b736d6 = () => interopDefault(import('..\\pages\\talks\\_slug.vue' /* webpackChunkName: "pages/talks/_slug" */))
 const _397b1def = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -35,12 +36,16 @@ export const routerOptions = {
     name: "projects"
   }, {
     path: "/talks",
-    component: _032513e4,
+    component: _566dd81e,
     name: "talks"
   }, {
     path: "/blog/:slug",
     component: _39270085,
     name: "blog-slug"
+  }, {
+    path: "/talks/:slug",
+    component: _54b736d6,
+    name: "talks-slug"
   }, {
     path: "/",
     component: _397b1def,

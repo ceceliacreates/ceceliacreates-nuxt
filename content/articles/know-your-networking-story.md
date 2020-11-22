@@ -1,5 +1,5 @@
 ---
-title: Know Your Networking Story
+title: Develop your Networking Story
 description: How to develop your candidate story for networking for a job search
 img: https://source.unsplash.com/cw-cj_nFa14/
 alt: blog post image alt text
