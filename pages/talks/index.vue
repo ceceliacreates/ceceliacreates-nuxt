@@ -38,7 +38,7 @@
 export default {
   async asyncData({ $content, params }) {
     const talks = await $content("talks", params.slug)
-      .only(["title", "description", "img", "link", "slides", "slug"])
+      .only(["title", "description", "img", "link", "slides", "embed", "slug"])
       .sortBy("createdAt", "asc")
       .fetch();
 

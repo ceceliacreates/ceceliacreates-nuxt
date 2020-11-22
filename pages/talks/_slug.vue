@@ -13,11 +13,17 @@
         <article class="ma-3 pa-3">
           <h1 class="text-h2">{{ talk.title }}</h1>
           <p class="text-subtitle-1">{{ talk.description }}</p>
+          <iframe
+            width="560"
+            height="315"
+            :src="`https://www.youtube.com/embed/${talk.embed}`"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <nuxt-content class="text-body-1 mx-3" :document="talk" />
           <a :href="talk.link">Video</a>
           <a :href="talk.slides">Slides</a>
-          <img :src="talk.img" :alt="talk.alt" />
-
-          <nuxt-content class="text-body-1 mx-3" :document="talk" />
         </article>
       </v-container>
     </v-main>
