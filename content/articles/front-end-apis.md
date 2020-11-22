@@ -1,7 +1,7 @@
 ---
 title: The Back End of the Front End - APIs
 description: An overview of interacting with APIs from your front-end application
-img: https://source.unsplash.com/G9dTk2zOB54/
+img: https://source.unsplash.com/MtqG1lWcUw0/
 alt: blog post image alt text
 tags:
   - apis
@@ -30,7 +30,7 @@ There are also 3rd-party Web APIs like the Twitter API or this[ amazing API that
 
 An API also allows the user interface of your application to interact with the back end of your application to retrieve and update data and perform business logic functions. These are the types of APIs we’ll focus on in this article.
 
-[user interface and REST API interaction](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-2.png)
+![user interface and REST API interaction](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-2.png)
 
 ## Rest APIs
 
@@ -46,7 +46,7 @@ A REST API consists of various endpoints that you access based on the type of in
 /api/hotfood
 ```
 
-[REST API with three endpoints](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-3.png)
+![REST API with three endpoints](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-3.png)
 
 You make requests to these endpoints using Methods. The most common methods are GET, POST, PUT, DELETE.
 
@@ -92,7 +92,7 @@ hotfood {
 }
 ```
 
-[graphql API with single endpoint](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-4.png)
+![graphql API with single endpoint](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-4.png)
 
 GraphQL APIs use “types” and “fields” as the syntax for requests. These are essentially objects and properties. You can also leverage arguments (like passing the “item” to our query above), aliases, fragments (reusable components of a query), and variables.
 
@@ -102,7 +102,7 @@ In addition to queries, you can also update data on your server using mutations.
 
 Most applications -- regardless of whether they use REST or GraphQL -- deploy the API on a server that is available at all times to receive requests. Again, think of the 24-hour restaurant counter.
 
-[Live server available 24/7](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-5.png)
+![Live server available 24/7](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-5.png)
 
 Another option that is increasingly popular is a serverless architecture for an application API. Let’s define a few terms that are often grouped together:
 
@@ -110,13 +110,13 @@ Another option that is increasingly popular is a serverless architecture for an 
 
 A function, API, or architecture that does not use a live running server. This refers to leveraging external APIs and/or vendors that offer on-demand servers to handle requests only when they occur.
 
-[Serverless API available on demand](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-6.png)
+![Serverless API available on demand](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-6.png)
 
 ### Microservices
 
 An API architecture that, instead of having a single layer that handles the business logic and data handling of an application, uses multiple packages or functions that are narrow in scope.
 
-[microservices with single user interface and multiple APIs](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-7.png)
+![microservices with single user interface and multiple APIs](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/apis-7.png)
 
 ### Jamstack
 
