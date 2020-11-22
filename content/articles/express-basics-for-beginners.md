@@ -3,10 +3,11 @@ title: Express Basics for Beginners
 description: The six basic functions you need to know to get up and running with Express
 img: https://source.unsplash.com/WISXZrJ6nlI/
 alt: blog post image alt text
-tags: 
+tags:
   - express
   - node
-  - apis
+  - api
+  - back-end
 ---
 
 When you’re in a 12-week full-stack boot camp, you have to learn <em>fast</em>. Because I already had familiarity with HTML, CSS, and Javascript, I was generally able to keep these topics separate in my mind as we whizzed through them. Once we transitioned to back end, however, it was like the wild west in my brain.
@@ -15,12 +16,11 @@ Node, Express, Sequelize, which did what on the back end? Is "fs" a native or in
 
 So I decided to go back, really study my code, and delineate what each line was doing, and whether it was working with Node, Express, or my database (either using Sequelize or MongoJS). It was illuminating and revelatory, and finally everything began to click into place.
 
-If you are in a similar situation, I cannot recommend enough going back and really diving into your code and parsing out what each line is accomplishing. No more REST vs. CRUD confusion! And debugging! It was no longer a game of "find the difference" between working code and non-working code. I was able to actually read the error and understand what might be wrong. 
+If you are in a similar situation, I cannot recommend enough going back and really diving into your code and parsing out what each line is accomplishing. No more REST vs. CRUD confusion! And debugging! It was no longer a game of "find the difference" between working code and non-working code. I was able to actually read the error and understand what might be wrong.
 
-As part of this exercise, I created a list of the basic, essential functions for Express. Express is a package that allows you to establish a connection to your server and write paths to handle incoming requests. 
+As part of this exercise, I created a list of the basic, essential functions for Express. Express is a package that allows you to establish a connection to your server and write paths to handle incoming requests.
 
 Below are the six things you should know how to do in Express, and in most cases, should be included in every application running Express. All of these functions can be written in a single server.js file, or the routes can be modularized into separate .js files and then required in server.js.
-
 
 ## Install and require Express
 
@@ -29,17 +29,17 @@ Express is not a native package to Node, so it must be installed. Because you wa
 <ul>
 <li>Run "npm install express" in Node while in your project folder</li>
 
-``` node
+```node
 npm install express
 ```
 
 <li>Insert "const express = require("express");" in your server.js file</li>
 
-``` javascript
+```javascript
 const express = require("express");
 ```
-</ul>
 
+</ul>
 
 ## Assign express to an app variable
 
@@ -47,11 +47,11 @@ const express = require("express");
 <li>
 Insert "const app = express();" in your server.js file. You can now use "app" to reference your instance of express (aka the server you’re working with)
 
-``` javascript
+```javascript
 const app = express();
 ```
-</ul>
 
+</ul>
 
 ## Set app to listen on a specified port
 
@@ -63,15 +63,15 @@ Insert "app.listen(PORT, function () { console.log("App running on port" + PORT)
 PORT can either be specified directly or assigned as a variable, ex. "const PORT = process.env.PORT || 3000;"
 </li>
 
-``` javascript
+```javascript
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, function () {
-console.log("App running on port" + PORT)})
+app.listen(PORT, function() {
+  console.log("App running on port" + PORT);
+});
 ```
 
 </ul>
-
 
 ## Set app to handle data parsing for JSON and URLencoded requests
 
@@ -80,14 +80,14 @@ console.log("App running on port" + PORT)})
 Depending on what type of requests your API will expect, you'll need to enable middleware to parse JSON or URLencoded requests. You can do this with app.use().
 </li>
 
-``` javascript
-
+```javascript
 // handle URLencoded requests
-app.use(express.urlencoded ({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
 
 // handle JSON requests
 app.use(express.json());
 ```
+
 </ul>
 
 ## Enable automatic return of static files
@@ -97,9 +97,10 @@ app.use(express.json());
 Set up app to automatically return static files without having to write a specific route for each file (ex. a "public" folder that has your HTML, CSS, and client-side JS files)
 </li>
 
-``` javascript
+```javascript
 app.use(express.static("public"));
 ```
+
 </ul>
 
 ## Handle REST requests
@@ -108,7 +109,7 @@ Write routes to handle REST requests to paths (GET, POST, PUT, DELETE). Each rou
 
 ### GET
 
-``` javascript
+```javascript
 app.get("path, function (req, res) {
 
 /// res.send will return the string back to the client
@@ -121,7 +122,7 @@ res.sendFile(path.join(__dirname, "../public/index.html"))})
 
 ### POST
 
-``` javascript
+```javascript
 
 app.post("path", function (req, res) {
 
@@ -135,7 +136,7 @@ res.json(response)
 
 ### PUT
 
-``` javascript
+```javascript
 
 app.put("path, function (req, res) {
 
@@ -145,9 +146,10 @@ app.put("path, function (req, res) {
 res.json(response)
 })
 ```
+
 ### DELETE
 
-``` javascript
+```javascript
 app.delete("path", function (req, res) {
 ...
 // handle database update
