@@ -22,8 +22,8 @@
             allowfullscreen
           ></iframe>
           <nuxt-content class="text-body-1 mx-3" :document="talk" />
-          <a :href="talk.link">Video</a>
-          <a :href="talk.slides">Slides</a>
+          <a :href="talk.link" target="blank">Video</a>
+          <a :href="talk.slides" target="blank">Slides</a>
         </article>
       </v-container>
     </v-main>
