@@ -1,5 +1,7 @@
 # ceceliacreates-nuxt
 
+[Deployed Site](https://stoic-jones-84f845.netlify.app/)
+
 Blog project with Nuxt content module (Work in Progress)
 
 Using Vuetify for components
