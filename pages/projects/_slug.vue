@@ -3,7 +3,7 @@
     <Navigation />
     <v-main>
       <v-container fluid fill-height id="main">
-        <NuxtLink to="/talks" class="nav-link">
+        <NuxtLink to="/projects" class="nav-link">
           <v-button
             ><v-icon class="ma-2" large color="cyan darken-1"
               >mdi-arrow-left</v-icon
@@ -11,21 +11,10 @@
           >
         </NuxtLink>
         <article class="ma-3 pa-3">
-          <h1 class="text-h2">{{ talk.title }}</h1>
-          <p class="text-subtitle-1">{{ talk.description }}</p>
-          <iframe
-            width="560"
-            height="315"
-            :src="`https://www.youtube.com/embed/${talk.embed}`"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <h1 class="text-h2">{{ project.title }}</h1>
+          <p class="text-subtitle-1">{{ project.description }}</p>
+          <a :href="project.link" target="blank">GitHub Repository</a>
         </article>
-        <ul>
-          <li><a :href="talk.link" target="blank">Video</a></li>
-          <li><a :href="talk.slides" target="blank">Slides</a></li>
-        </ul>
       </v-container>
     </v-main>
   </v-app>
@@ -34,9 +23,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const talk = await $content("talks", params.slug).fetch();
+    const project = await $content("projects", params.slug).fetch();
 
-    return { talk };
+    return { project };
   },
   methods: {
     formatDate(date) {

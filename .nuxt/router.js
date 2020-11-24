@@ -4,9 +4,10 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _3adda1cd = () => interopDefault(import('..\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _4683986d = () => interopDefault(import('..\\pages\\projects.vue' /* webpackChunkName: "pages/projects" */))
+const _40185116 = () => interopDefault(import('..\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
 const _566dd81e = () => interopDefault(import('..\\pages\\talks\\index.vue' /* webpackChunkName: "pages/talks/index" */))
 const _39270085 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
+const _438593a6 = () => interopDefault(import('..\\pages\\projects\\_slug.vue' /* webpackChunkName: "pages/projects/_slug" */))
 const _54b736d6 = () => interopDefault(import('..\\pages\\talks\\_slug.vue' /* webpackChunkName: "pages/talks/_slug" */))
 const _397b1def = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -32,7 +33,7 @@ export const routerOptions = {
     name: "blog"
   }, {
     path: "/projects",
-    component: _4683986d,
+    component: _40185116,
     name: "projects"
   }, {
     path: "/talks",
@@ -42,6 +43,10 @@ export const routerOptions = {
     path: "/blog/:slug",
     component: _39270085,
     name: "blog-slug"
+  }, {
+    path: "/projects/:slug",
+    component: _438593a6,
+    name: "projects-slug"
   }, {
     path: "/talks/:slug",
     component: _54b736d6,
