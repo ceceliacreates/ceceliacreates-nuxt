@@ -88,7 +88,7 @@ Because we are going to be generating a static site to deploy, we have set the `
 
 Using Netlify, we simply connect to the GitHub repository, set the build command as `npm run generate` and the publish folder as `dist`. Now, every time we push a change to our main branch, Netlify will build the new site and deploy it. This allows us to leverage a Git-based CMS. Whenever we want to add new content to our site, we simply need to add a new Markdown file with our content. Nuxt and the Content Module will dynamically generate the new page and route during the build process.
 
-![Netlify Build Settings Screenshot](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/build-settings.png)
+![Netlify Build Settings Screenshot](https://raw.githubusercontent.com/ceceliacreates/ceceliacreates-nuxt/main/assets/images/build-settings.PNG)
 
 ## Screenshots
 
