@@ -44,6 +44,8 @@
       color="white"
       dark
       src="https://source.unsplash.com/E0AHdsENmDg/1920x1310"
+      app
+      absolute
     >
       <template v-slot:img="{ props }">
         <v-img
