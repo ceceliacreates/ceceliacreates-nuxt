@@ -7,6 +7,7 @@ export default {
   ],
   target: "static",
   meta: [
+    { charset: "utf-8" },
     {
       name: "viewport",
       content:
