@@ -1,10 +1,10 @@
-# ceceliacreates-nuxt
+# Unpacking the Nuxt Content Module
+
+This project is a redesign of my personal site using Nuxt.js and the Nuxt Content Module.
+
+Webinar Recording - TBD
 
 [Deployed Site](https://stoic-jones-84f845.netlify.app/)
-
-Blog project with Nuxt content module
-
-Using Vuetify for components
 
 Resources:
 
@@ -74,11 +74,82 @@ We can now use Vuetify.js components in our application. Just like with our cust
 
 ## Content Module Features
 
-### Markdown content
+### Content directory
+
+Similar to how we use the `pages` directory to automatically handle our routing, we can use the `content` directory to manage the content for our site. From here, the Content Module will create our content pages.
+
+You can use a few different file types, but we'll use Markdown. Within our `content` directory, we can use subdirectories to organize content types. In our project, we have articles, projects, and talks to correspond with our blog, projects, and talks pages.
+
+The `content/articles` directory contains the Markdown files for our blog posts. Each post has metadata that contains the injected variables we'll need for our page templates. This is set in a YAML front matter block at the top of our file.
+
+```
+---
+title: Create Multiple GitHub Issues Automatically with Node and the GitHub API
+description: How to create GitHub issues automatically from a JSON file using Node, Node-Fetch, the GitHub API, and dotenv.
+img: https://source.unsplash.com/MAYEkmn7G6E/
+alt: blog post image alt text
+tags:
+  - GitHub
+  - node
+  - JSON
+  - api
+  - automation
+  - devops
+---
+```
 
 ### Dynamic page creation
 
-### Default & custom injected variables
+To leverage dynamic page creation for our content, we'll need to create an `index.vue` and `_slug.vue` file for each subdirectory in our pages folder.
+
+The `index.vue` page contains a list of all the articles. The `_slug.vue` serves as the template for each individual article.
+
+We get the content in the `<script>` tag of our `index.vue` component.
+
+```
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    const articles = await $content("articles", params.slug)
+      .only(["title", "description", "img", "slug"])
+      .sortBy("createdAt", "desc")
+      .fetch();
+
+    return {
+      articles,
+    };
+  },
+};
+</script>
+```
+
+We get the data of each individual article using the `<script>` tag on the `_slug.vue` template.
+
+```
+ async asyncData({ $content, params }) {
+    const article = await $content("articles", params.slug).fetch();
+
+    return { article };
+  },
+```
+
+We now automatically have routes for each article at `myapp.com/blog/article-file-name`.
+
+### Injected variables
+
+You can use the properties in the YAML front matter block within your page template. They are properties on the `article` object we returned in our `_slug.vue` script tag. We have access to title, description, and img because these are properties in our YAML block.
+
+```
+<article class="ma-3 pa-3">
+  <h1 class="text-h2">{{ article.title }}</h1>
+  <p class="text-subtitle-1">{{ article.description }}</p>
+    <img :src="article.img" :alt="article.alt" />
+    <p class="font-italic">
+      Article last updated: {{ formatDate(article.updatedAt) }}
+    </p>
+  <nuxt-content class="text-body-1 mx-3" :document="article" />
+</article>
+```
 
 ### Live editing in dev
 
