@@ -2,15 +2,16 @@
 
 This project is a redesign of my personal site using Nuxt.js and the Nuxt Content Module.
 
-Webinar Recording - TBD
+Check out a presentation of this project on Friday, December 4, 2020 at Women Who Code Connect Forward! [Register here to attend this free conference](https://connectforward.womenwhocode.dev/register/).
 
 [Deployed Site](https://stoic-jones-84f845.netlify.app/)
 
 Resources:
 
-- https://nuxtjs.org/blog/creating-blog-with-nuxt-content
-- https://nuxtjs.org/docs/2.x/get-started/installation
-- https://vuetifyjs.com/en/introduction/why-vuetify/#guide
+- [Nuxt Content Documentation](https://content.nuxtjs.org/)
+- [Nuxt Blog: Creating a Blog with Nuxt Content](https://nuxtjs.org/blog/creating-blog-with-nuxt-content)
+- [Nuxt.js Documentation](https://nuxtjs.org/docs/2.x/get-started/installation)
+- [Vuetify Documentation](https://vuetifyjs.com/en/introduction/why-vuetify/#guide)
 
 ## Nuxt.js Features
 
@@ -152,6 +153,10 @@ You can use the properties in the YAML front matter block within your page templ
 ```
 
 ### Live editing in dev
+
+If you're reviewing your site locally and want to make changes to your content, there's no need to hunt down the corresponding Markdown file. You can double-click on the `<nuxt-content>` component in your browser and it becomes editable, with changes automatically saved. This was really helpful as I was formatting code snippets and wanted to see how they would render.
+
+Read more about this feature in the [documentation here](https://content.nuxtjs.org/displaying#live-editing).
 
 ### Simple build and deploy
 
