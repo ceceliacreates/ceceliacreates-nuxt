@@ -4,5 +4,5 @@ description: Interested in speaking about tech but not sure where to start? In t
 link: https://www.youtube.com/watch?v=lvS8kpaRyXk
 embed: lvS8kpaRyXk
 slides: https://cypress.slides.com/cecelia/wwc-tech-talk-speaker-workshop
-img: https://source.unsplash.com/wn7dOzUh3Rs
+img: tech-talk-speaker-workshop.jpg
 ---

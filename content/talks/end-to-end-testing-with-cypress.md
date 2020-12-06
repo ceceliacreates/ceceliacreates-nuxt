@@ -4,5 +4,5 @@ description: Looking to add testing to your skill set or just feel more confiden
 link: https://www.youtube.com/watch?v=NHfA9Lm_5i4
 embed: NHfA9Lm_5i4
 slides: https://github.com/CypressCecelia/testing-workshop-cypress/tree/js-marathon
-img: https://source.unsplash.com/fckhR4mysac
+img: end-to-end-testing-with-cypress.jpg
 ---

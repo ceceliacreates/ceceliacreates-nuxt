@@ -1,7 +1,7 @@
 ---
 title: Sequelize Basics for Beginners
 description: How to set up Sequelize in your app
-img: https://source.unsplash.com/IKHvOlZFCOg/
+img: sequelize-basics-for-beginners.jpg
 alt: blog post image alt text
 tags:
   - sql
@@ -69,7 +69,7 @@ module.exports = function(sequelize, DataTypes) {
     title: DataTypes.STRING,
     author: DataTypes.STRING,
     content: DataTypes.TEXT,
-    pubdate: DataTypes.DATE,
+    pubdate: DataTypes.DATE
   });
   return Post;
 };

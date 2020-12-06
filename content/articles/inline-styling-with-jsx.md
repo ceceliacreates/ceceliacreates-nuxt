@@ -1,7 +1,7 @@
 ---
 title: Inline Styling with JSX
 description: How to properly format inline styling with JSX and React
-img: https://source.unsplash.com/c8h0n7fSTqs/
+img: inline-styling-with-jsx.jpg
 alt: blog post image alt text
 tags:
   - react
@@ -9,7 +9,7 @@ tags:
   - front-end
 ---
 
-If you are new to React, you have likely already encountered JSX, a syntax extension for Javascript used by the framework. It very closely resembles HTML, allowing for an easy transition if you’re already using HTML, CSS, and Javascript to create web applications. Just like HTML, JSX allows for inline styling. I’m not here to make an argument for or against inline styling versus external or internal style sheets, but if you do need to use inline style for a JSX element, there are some things to keep in mind to make sure your components render as expected.
+If you are new to React, you have likely already encountered JSX, a syntax extension for Javascript used by the framework. It very closely resembles HTML, allowing for an easy transition if you're already using HTML, CSS, and Javascript to create web applications. Just like HTML, JSX allows for inline styling. I'm not here to make an argument for or against inline styling versus external or internal style sheets, but if you do need to use inline style for a JSX element, there are some things to keep in mind to make sure your components render as expected.
 
 Here is an example of a JSX expression being rendered by a simple function component:
 

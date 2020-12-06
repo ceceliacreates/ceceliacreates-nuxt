@@ -13,7 +13,10 @@
         <article class="ma-3 pa-3">
           <h1 class="text-h2">{{ article.title }}</h1>
           <p class="text-subtitle-1">{{ article.description }}</p>
-          <img :src="article.img" :alt="article.alt" />
+          <img
+            :src="require(`~/assets/images/${article.img}`)"
+            :alt="article.alt"
+          />
           <p class="font-italic">
             Article last updated: {{ formatDate(article.updatedAt) }}
           </p>
@@ -36,8 +39,15 @@ export default {
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };
       return new Date(date).toLocaleDateString("en", options);
-    },
+    }
   },
+  head: {
+    title: "Home page",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
+  }
 };
 </script>
 

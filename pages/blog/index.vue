@@ -17,7 +17,9 @@
                 class="blog-link"
               >
                 <v-card shaped class="blog-card">
-                  <v-img :src="article.img"></v-img>
+                  <v-img
+                    :src="require(`~/assets/images/${article.img}`)"
+                  ></v-img>
                   <v-card-text>
                     <v-card-title>
                       {{ article.title }}
@@ -43,9 +45,16 @@ export default {
       .fetch();
 
     return {
-      articles,
+      articles
     };
   },
+  head: {
+    title: "Home page",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
+  }
 };
 </script>
 <style>

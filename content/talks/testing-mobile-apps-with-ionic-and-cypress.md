@@ -4,5 +4,5 @@ description: JavaScript for mobile development AND testing? With Ionic and Cypre
 link: https://www.youtube.com/watch?v=cZlm9J0C5GA
 embed: cZlm9J0C5GA
 slides: https://github.com/ceceliacreates/ionic-cypress
-img: https://source.unsplash.com/4TBdESUNuFg/
+img: testing-mobile-apps-with-ionic-and-cypress.jpg
 ---
