@@ -1,7 +1,7 @@
 ---
 title: Express Basics for Beginners
 description: The six basic functions you need to know to get up and running with Express
-img: https://source.unsplash.com/WISXZrJ6nlI/
+img: express-basics-for-beginners.jpg
 alt: blog post image alt text
 tags:
   - express
@@ -10,9 +10,9 @@ tags:
   - back-end
 ---
 
-When you’re in a 12-week full-stack boot camp, you have to learn <em>fast</em>. Because I already had familiarity with HTML, CSS, and Javascript, I was generally able to keep these topics separate in my mind as we whizzed through them. Once we transitioned to back end, however, it was like the wild west in my brain.
+When you're in a 12-week full-stack boot camp, you have to learn <em>fast</em>. Because I already had familiarity with HTML, CSS, and Javascript, I was generally able to keep these topics separate in my mind as we whizzed through them. Once we transitioned to back end, however, it was like the wild west in my brain.
 
-Node, Express, Sequelize, which did what on the back end? Is "fs" a native or installed package? What do I need to require? I spent a lot of time just copy and pasting from in-class activities and previous homework assignments instead of fully understanding the concepts of what I was coding. I got things to work, but didn’t really understand <em>why</em> it worked.
+Node, Express, Sequelize, which did what on the back end? Is "fs" a native or installed package? What do I need to require? I spent a lot of time just copy and pasting from in-class activities and previous homework assignments instead of fully understanding the concepts of what I was coding. I got things to work, but didn't really understand <em>why</em> it worked.
 
 So I decided to go back, really study my code, and delineate what each line was doing, and whether it was working with Node, Express, or my database (either using Sequelize or MongoJS). It was illuminating and revelatory, and finally everything began to click into place.
 
@@ -24,7 +24,7 @@ Below are the six things you should know how to do in Express, and in most cases
 
 ## Install and require Express
 
-Express is not a native package to Node, so it must be installed. Because you want to ensure it’s included in your node modules, make sure to install it locally and then require it in your server.
+Express is not a native package to Node, so it must be installed. Because you want to ensure it's included in your node modules, make sure to install it locally and then require it in your server.
 
 <ul>
 <li>Run "npm install express" in Node while in your project folder</li>
@@ -45,7 +45,7 @@ const express = require("express");
 
 <ul>
 <li>
-Insert "const app = express();" in your server.js file. You can now use "app" to reference your instance of express (aka the server you’re working with)
+Insert "const app = express();" in your server.js file. You can now use "app" to reference your instance of express (aka the server you're working with)
 
 ```javascript
 const app = express();
@@ -157,4 +157,4 @@ app.delete("path", function (req, res) {
 res.json(response)
 ```
 
-<p>That’s it! As long as you understand how these functions work you have a basic understanding of Express and can set up a server for full stack applications. Please let me know if you have any questions or suggestions!</p>
+<p>That's it! As long as you understand how these functions work you have a basic understanding of Express and can set up a server for full stack applications. Please let me know if you have any questions or suggestions!</p>

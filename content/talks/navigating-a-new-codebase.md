@@ -4,5 +4,5 @@ description: A webinar for Women Who Code Front End about my transition from boo
 link: https://www.youtube.com/watch?v=4Z-9k9xcP2M
 embed: 4Z-9k9xcP2M
 slides: https://docs.google.com/presentation/d/1oHHz_gzvDqc1s6vcjbnMZxv_IBrqPaQqjOBC66ZNKNA/edit?usp=sharing
-img: https://source.unsplash.com/ZWD3Dx6aUJg/
+img: navigating-a-new-codebase.jpg
 ---

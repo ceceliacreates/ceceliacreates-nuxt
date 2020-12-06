@@ -3,13 +3,13 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _3adda1cd = () => interopDefault(import('..\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _40185116 = () => interopDefault(import('..\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
-const _566dd81e = () => interopDefault(import('..\\pages\\talks\\index.vue' /* webpackChunkName: "pages/talks/index" */))
-const _39270085 = () => interopDefault(import('..\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
-const _438593a6 = () => interopDefault(import('..\\pages\\projects\\_slug.vue' /* webpackChunkName: "pages/projects/_slug" */))
-const _54b736d6 = () => interopDefault(import('..\\pages\\talks\\_slug.vue' /* webpackChunkName: "pages/talks/_slug" */))
-const _397b1def = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _1952acc7 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _384f129f = () => interopDefault(import('../pages/projects/index.vue' /* webpackChunkName: "pages/projects/index" */))
+const _0d577458 = () => interopDefault(import('../pages/talks/index.vue' /* webpackChunkName: "pages/talks/index" */))
+const _179c0b7f = () => interopDefault(import('../pages/blog/_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
+const _36987157 = () => interopDefault(import('../pages/projects/_slug.vue' /* webpackChunkName: "pages/projects/_slug" */))
+const _0ba0d310 = () => interopDefault(import('../pages/talks/_slug.vue' /* webpackChunkName: "pages/talks/_slug" */))
+const _926d88c0 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -29,31 +29,31 @@ export const routerOptions = {
 
   routes: [{
     path: "/blog",
-    component: _3adda1cd,
+    component: _1952acc7,
     name: "blog"
   }, {
     path: "/projects",
-    component: _40185116,
+    component: _384f129f,
     name: "projects"
   }, {
     path: "/talks",
-    component: _566dd81e,
+    component: _0d577458,
     name: "talks"
   }, {
     path: "/blog/:slug",
-    component: _39270085,
+    component: _179c0b7f,
     name: "blog-slug"
   }, {
     path: "/projects/:slug",
-    component: _438593a6,
+    component: _36987157,
     name: "projects-slug"
   }, {
     path: "/talks/:slug",
-    component: _54b736d6,
+    component: _0ba0d310,
     name: "talks-slug"
   }, {
     path: "/",
-    component: _397b1def,
+    component: _926d88c0,
     name: "index"
   }],
 

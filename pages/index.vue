@@ -2,7 +2,7 @@
   <v-app>
     <Navigation />
     <v-main>
-      <v-container fluid fill-height id="main" style="max-height: 100vh;">
+      <v-container fluid fill-height id="main" style="max-height: 100vh">
         <v-row align="center" justify="center">
           <v-col class="text-left" cols="12" md="6">
             <h2 class="text-h2 font-weight-thin white--text mb-2">
@@ -14,10 +14,10 @@
           </v-col>
           <v-col class="text-center" cols="12" md="6">
             <v-img
-              lazy-src="https://raw.githubusercontent.com/ceceliacreates/gatsby-ceceliacreates/main/src/images/CeceliaCreates.png"
+              :lazy-src="require('~/assets/images/CeceliaCreates.png')"
               max-width="250"
               class="mx-auto rounded-circle my-3"
-              src="https://raw.githubusercontent.com/ceceliacreates/gatsby-ceceliacreates/main/src/images/CeceliaCreates.png"
+              :src="require('~/assets/images/CeceliaCreates.png')"
             ></v-img>
             <h4 class="subheading white--text">
               <a href="http://www.twitter.com/ceceliacreates" target="blank"
@@ -65,8 +65,8 @@ export default {
     title: "Home page",
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-    ],
-  },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
+  }
 };
 </script>

@@ -4,5 +4,5 @@ description: More than 40 million developers use GitHub to store, share, and col
 link: https://www.youtube.com/watch?v=7NelKUNgelM
 embed: 7NelKUNgelM
 slides: https://docs.google.com/presentation/d/1tX609xC3losnKLCF6Atq-fpXtqpYaGMHe_rmEcW34nI/edit?usp=sharing
-img: https://source.unsplash.com/KE0nC8-58MQ/
+img: how-to-increase-productivity-with-node.jpg
 ---

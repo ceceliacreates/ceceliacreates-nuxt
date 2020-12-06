@@ -17,7 +17,7 @@
                 class="talk-link"
               >
                 <v-card shaped class="talk-card">
-                  <v-img :src="talk.img"></v-img>
+                  <v-img :src="require(`~/assets/images/${talk.img}`)"></v-img>
                   <v-card-text>
                     <v-card-title>
                       {{ talk.title }}
@@ -43,9 +43,16 @@ export default {
       .fetch();
 
     return {
-      talks,
+      talks
     };
   },
+  head: {
+    title: "Home page",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
+  }
 };
 </script>
 <style>

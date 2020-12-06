@@ -17,7 +17,9 @@
                 class="project-link"
               >
                 <v-card shaped class="project-card">
-                  <v-img :src="project.img"></v-img>
+                  <v-img
+                    :src="require(`~/assets/images/${project.img}`)"
+                  ></v-img>
                   <v-card-text>
                     <v-card-title>
                       {{ project.title }}
@@ -43,9 +45,16 @@ export default {
       .fetch();
 
     return {
-      projects,
+      projects
     };
   },
+  head: {
+    title: "Home page",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
+  }
 };
 </script>
 <style>

@@ -31,8 +31,15 @@ export default {
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };
       return new Date(date).toLocaleDateString("en", options);
-    },
+    }
   },
+  head: {
+    title: "Home page",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
+  }
 };
 </script>
 

@@ -4,5 +4,5 @@ description: Explore the Cypress Real World App with the Cypress.io UK Community
 link: https://www.youtube.com/watch?v=jZly1Cpun-Q
 embed: jZly1Cpun-Q
 slides: https://cypress.slides.com/cecelia/deck-971881
-img: https://source.unsplash.com/3V8xo5Gbusk
+img: exploring-the-cypress-real-world-app.jpg
 ---
