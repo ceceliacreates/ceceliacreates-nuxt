@@ -3,42 +3,49 @@
     "name": "blog",
     "path": "/blog",
     "component": "/Users/cecelia/workspace/ceceliacreates-nuxt/pages/blog/index.vue",
-    "chunkName": "pages/blog/index"
+    "chunkName": "pages/blog/index",
+    "_name": "_1952acc7"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "/Users/cecelia/workspace/ceceliacreates-nuxt/pages/projects/index.vue",
-    "chunkName": "pages/projects/index"
+    "chunkName": "pages/projects/index",
+    "_name": "_384f129f"
   },
   {
     "name": "talks",
     "path": "/talks",
     "component": "/Users/cecelia/workspace/ceceliacreates-nuxt/pages/talks/index.vue",
-    "chunkName": "pages/talks/index"
+    "chunkName": "pages/talks/index",
+    "_name": "_0d577458"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
     "component": "/Users/cecelia/workspace/ceceliacreates-nuxt/pages/blog/_slug.vue",
-    "chunkName": "pages/blog/_slug"
+    "chunkName": "pages/blog/_slug",
+    "_name": "_179c0b7f"
   },
   {
     "name": "projects-slug",
     "path": "/projects/:slug",
     "component": "/Users/cecelia/workspace/ceceliacreates-nuxt/pages/projects/_slug.vue",
-    "chunkName": "pages/projects/_slug"
+    "chunkName": "pages/projects/_slug",
+    "_name": "_36987157"
   },
   {
     "name": "talks-slug",
     "path": "/talks/:slug",
     "component": "/Users/cecelia/workspace/ceceliacreates-nuxt/pages/talks/_slug.vue",
-    "chunkName": "pages/talks/_slug"
+    "chunkName": "pages/talks/_slug",
+    "_name": "_0ba0d310"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/cecelia/workspace/ceceliacreates-nuxt/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_926d88c0"
   }
 ]
