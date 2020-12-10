@@ -2,27 +2,40 @@
   <v-app>
     <Navigation />
     <v-main>
-      <v-container fluid fill-height id="main">
-        <NuxtLink to="/blog" class="nav-link">
-          <v-button
-            ><v-icon class="ma-2" large color="cyan darken-1"
-              >mdi-arrow-left</v-icon
-            ></v-button
-          >
-        </NuxtLink>
-        <article class="ma-3 pa-3">
-          <h1 class="text-h2">{{ article.title }}</h1>
-          <p class="text-subtitle-1">{{ article.description }}</p>
-          <img
-            :src="require(`~/assets/images/${article.img}`)"
-            :alt="article.alt"
-          />
-          <p class="font-italic">
-            Article last updated: {{ formatDate(article.updatedAt) }}
-          </p>
-
-          <nuxt-content class="text-body-1 mx-3" :document="article" />
-        </article>
+      <v-container fluid id="main">
+        <v-row>
+          <v-col cols="12">
+            <NuxtLink to="/blog" class="nav-link">
+              <v-button
+                ><v-icon class="ma-2" large color="cyan darken-1"
+                  >mdi-arrow-left</v-icon
+                ></v-button
+              >
+            </NuxtLink>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col class="ma-3 pa-3" cols="12">
+            <h1 class="text-h2">{{ article.title }}</h1>
+            <p class="text-subtitle-1">{{ article.description }}</p>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
+            <img
+              :src="require(`~/assets/images/${article.img}`)"
+              :alt="article.alt"
+            />
+            <p class="font-italic">
+              Article last updated: {{ formatDate(article.updatedAt) }}
+            </p>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
+            <nuxt-content class="text-body-1 mx-3" :document="article" />
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
   </v-app>
@@ -56,8 +69,7 @@ export default {
   text-decoration: none;
 }
 img {
-  max-width: 800px;
-  max-height: 600px;
+  max-width: 100%;
 }
 h2 {
   font-weight: bold;

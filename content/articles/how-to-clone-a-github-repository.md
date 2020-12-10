@@ -35,7 +35,7 @@ To fork the repository, click the Fork button. If you have more than one organiz
 
 This table demonstrates the difference:
 
-| Fork     |                          | Clone    |                           |
+| Fork  |                          | Clone   |                         |
 | -------- | ------------------------ | -------- | ------------------------- |
 | Owner    | Changes (original > you) | Owner    | Does Not Change (you)     |
 | Location | Does Not Change (remote) | Location | Changes (remote to local) |
