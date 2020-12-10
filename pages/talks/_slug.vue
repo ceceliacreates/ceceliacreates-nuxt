@@ -2,30 +2,60 @@
   <v-app>
     <Navigation />
     <v-main>
-      <v-container fluid fill-height id="main">
-        <NuxtLink to="/talks" class="nav-link">
-          <v-button
-            ><v-icon class="ma-2" large color="cyan darken-1"
-              >mdi-arrow-left</v-icon
-            ></v-button
-          >
-        </NuxtLink>
-        <article class="ma-3 pa-3">
-          <h1 class="text-h2">{{ talk.title }}</h1>
-          <p class="text-subtitle-1">{{ talk.description }}</p>
-          <iframe
-            width="560"
-            height="315"
-            :src="`https://www.youtube.com/embed/${talk.embed}`"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </article>
-        <ul>
-          <li><a :href="talk.link" target="blank">Video</a></li>
-          <li><a :href="talk.slides" target="blank">Slides</a></li>
-        </ul>
+      <v-container fluid id="main">
+        <v-row>
+          <v-col cols="12">
+            <NuxtLink to="/talks" class="nav-link">
+              <v-button
+                ><v-icon class="ma-2" large color="cyan darken-1"
+                  >mdi-arrow-left</v-icon
+                ></v-button
+              >
+            </NuxtLink>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col class="ma-3 pa-3" cols="12">
+            <h1 class="text-h2">{{ talk.title }}</h1>
+            <p class="text-subtitle-1">{{ talk.description }}</p>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12" md="6">
+            <iframe
+              width="460"
+              height="258"
+              :src="`https://www.youtube.com/embed/${talk.embed}`"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </v-col>
+          <v-col cols="12" md="6">
+            <ul>
+              <li>
+                <v-icon class="ma-2" large color="cyan darken-1"
+                  >mdi-video</v-icon
+                ><a
+                  :href="talk.link"
+                  class="text-decoration-none  black--text"
+                  target="blank"
+                  >Video</a
+                >
+              </li>
+              <li>
+                <v-icon class="ma-2" large color="cyan darken-1"
+                  >mdi-presentation</v-icon
+                ><a
+                  :href="talk.slides"
+                  class="text-decoration-none black--text"
+                  target="blank"
+                  >Slides</a
+                >
+              </li>
+            </ul>
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
   </v-app>
@@ -54,7 +84,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+ul {
+  list-style: none;
+}
 .nav-link {
   text-decoration: none;
 }
