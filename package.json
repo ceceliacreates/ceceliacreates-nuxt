@@ -13,6 +13,7 @@
     "remark-gfm": "^1.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.2"
+    "@nuxtjs/vuetify": "^1.11.2",
+    "netlify-plugin-cypress": "^1.4.1"
   }
 }

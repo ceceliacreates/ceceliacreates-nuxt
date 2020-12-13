@@ -58,7 +58,7 @@
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-spacer class="hidden-md-and-up"></v-spacer>
-      <NuxtLink to="/" class="nav-link">
+      <NuxtLink to="/" class="nav-link" data-cy="home-link">
         <v-icon class="ma-2">mdi-code-tags</v-icon>
 
         <v-icon class="ma-2">mdi-heart</v-icon>
@@ -67,17 +67,20 @@
       </NuxtLink>
       <v-spacer class="hidden-sm-and-down"></v-spacer>
       <NuxtLink to="/projects" class="nav-link hidden-sm-and-down"
-        ><v-btn text class="white--text hidden-sm-and-down"
+        ><v-btn
+          text
+          class="white--text hidden-sm-and-down"
+          data-cy="projects-link"
           >PROJECTS</v-btn
         ></NuxtLink
       >
       <NuxtLink to="/blog" class="nav-link hidden-sm-and-down"
-        ><v-btn text class="white--text hidden-sm-and-down"
+        ><v-btn text class="white--text hidden-sm-and-down" data-cy="blog-link"
           >BLOG</v-btn
         ></NuxtLink
       >
       <NuxtLink to="/talks" class="nav-link hidden-sm-and-down"
-        ><v-btn text class="white--text hidden-sm-and-down"
+        ><v-btn text class="white--text hidden-sm-and-down" data-cy="talks-link"
           >TALKS</v-btn
         ></NuxtLink
       >
@@ -89,9 +92,9 @@ export default {
   name: "Navigation",
   data() {
     return {
-      drawer: false,
+      drawer: false
     };
-  },
+  }
 };
 </script>
 <style scoped>

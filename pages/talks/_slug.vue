@@ -7,7 +7,11 @@
           <v-col cols="12">
             <NuxtLink to="/talks" class="nav-link">
               <v-button
-                ><v-icon class="ma-2" large color="cyan darken-1"
+                ><v-icon
+                  class="ma-2"
+                  large
+                  color="cyan darken-1"
+                  data-cy="back-button"
                   >mdi-arrow-left</v-icon
                 ></v-button
               >
@@ -25,6 +29,7 @@
             <iframe
               width="460"
               height="258"
+              data-cy="talk-video"
               :src="`https://www.youtube.com/embed/${talk.embed}`"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

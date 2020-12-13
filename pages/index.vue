@@ -20,22 +20,32 @@
               :src="require('~/assets/images/CeceliaCreates.png')"
             ></v-img>
             <h4 class="subheading white--text">
-              <a href="http://www.twitter.com/ceceliacreates" target="blank"
+              <a
+                href="http://www.twitter.com/ceceliacreates"
+                target="blank"
+                data-cy="twitter-link"
                 ><v-icon class="ma-2" color="white" large
                   >mdi-twitter</v-icon
                 ></a
               >
-              <a href="http://www.github.com/ceceliacreates" target="blank"
+              <a
+                href="http://www.github.com/ceceliacreates"
+                target="blank"
+                data-cy="github-link"
                 ><v-icon class="ma-2" color="white" large>mdi-github</v-icon></a
               >
               <a
                 href="https://www.linkedin.com/in/ceceliamartinez/"
                 target="blank"
+                data-cy="linkedin-link"
                 ><v-icon class="ma-2" color="white" large
                   >mdi-linkedin</v-icon
                 ></a
               >
-              <a href="https://www.twitch.tv/ceceliacreates" target="blank"
+              <a
+                href="https://www.twitch.tv/ceceliacreates"
+                target="blank"
+                data-cy="twitch-link"
                 ><v-icon class="ma-2" color="white" large>mdi-twitch</v-icon></a
               >
             </h4>
