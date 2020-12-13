@@ -33,12 +33,17 @@ To fork the repository, click the Fork button. If you have more than one organiz
 
 > Forks and clones are both copies, but the difference has to do with what changes during the copy. With a fork, the owner changes during the copy (original repo owner > you) but the location of the repo (remote) stays the same. With a clone, the owner stays the same (you > you) but the location changes (remote > local).
 
-This table demonstrates the difference:
+This breakdown demonstrates the difference:
 
-| Fork  |                          | Clone   |                         |
-| -------- | ------------------------ | -------- | ------------------------- |
-| Owner    | Changes (original > you) | Owner    | Does Not Change (you)     |
-| Location | Does Not Change (remote) | Location | Changes (remote to local) |
+### Fork
+
+- Owner: Changes (original > you)
+- Location: Does Not Change (remote)
+
+### Clone
+
+- Owner: Does Not Change (you)
+- Location: Changes (remote to local)
 
 Under the main menu on the repository page in GitHub, there is a green Code button.
 

@@ -69,7 +69,9 @@ export default {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
 }
 h2 {
   font-weight: bold;
