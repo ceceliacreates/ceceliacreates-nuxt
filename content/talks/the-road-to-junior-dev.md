@@ -1,5 +1,6 @@
 ---
 title: The Road to Junior Dev - What and How to Learn
+date: 2020-04-03
 description: A discussion and QA with the Coders Craft Dev Meetup on what and how to learn on your journey into tech.
 link: https://www.youtube.com/watch?v=QyPuLae3Ww4
 embed: QyPuLae3Ww4

@@ -26,9 +26,6 @@
               :src="require(`~/assets/images/${article.img}`)"
               :alt="article.alt"
             />
-            <p class="font-italic">
-              Article last updated: {{ formatDate(article.updatedAt) }}
-            </p>
           </v-col>
         </v-row>
         <v-row>

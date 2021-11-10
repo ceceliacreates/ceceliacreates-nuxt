@@ -1,5 +1,6 @@
 ---
 title: Navigating a New Codebase - Tips and Tricks to Ease the Transition
+date: 2020-08-20
 description: A webinar for Women Who Code Front End about my transition from boot camp student to junior software developer.
 link: https://www.youtube.com/watch?v=4Z-9k9xcP2M
 embed: 4Z-9k9xcP2M

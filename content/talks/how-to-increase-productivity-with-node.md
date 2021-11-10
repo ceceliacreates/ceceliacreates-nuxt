@@ -1,5 +1,6 @@
 ---
 title: How to Increase Productivity with Node.js and Github API
+date: 2020-08-20
 description: More than 40 million developers use GitHub to store, share, and collaborate on open-source software. Learn how to leverage its robust API with lightweight Node scripts to increase productivity in your individual or team development process.
 link: https://www.youtube.com/watch?v=7NelKUNgelM
 embed: 7NelKUNgelM

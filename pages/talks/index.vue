@@ -40,6 +40,7 @@ export default {
     const talks = await $content("talks", params.slug)
       .only([
         "title",
+        "date",
         "description",
         "descriptionCont",
         "img",
@@ -48,7 +49,7 @@ export default {
         "embed",
         "slug"
       ])
-      .sortBy("createdAt", "desc")
+      .sortBy("date", "desc")
       .fetch();
 
     return {
