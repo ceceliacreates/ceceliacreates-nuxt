@@ -25,7 +25,7 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col v-if="talk.embed" cols="12" md="6">
             <iframe
               width="460"
               height="258"
@@ -38,7 +38,7 @@
           </v-col>
           <v-col cols="12" md="6">
             <ul>
-              <li>
+              <li v-if="talk.link">
                 <v-icon class="ma-2" large color="cyan darken-1"
                   >mdi-video</v-icon
                 ><a
@@ -48,7 +48,7 @@
                   >Video</a
                 >
               </li>
-              <li>
+              <li v-if="talk.slides">
                 <v-icon class="ma-2" large color="cyan darken-1"
                   >mdi-presentation</v-icon
                 ><a
