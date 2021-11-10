@@ -126,3 +126,5 @@ db.sequelize.sync({force: true}).then(function() {
 **This will re-build your database.** You will need to ensure you remove it before starting your server again, otherwise the database will keep re-building (this is fine if you don't need persistent data to develop). You will also need to re-seed any development data you are using to your database.
 
 Your database is now connected to your app using Sequelize! Please let me know if you have any suggestions or questions! I am always learning and welcome the feedback. Thanks for reading!
+
+## THIS IS A CHANGE
