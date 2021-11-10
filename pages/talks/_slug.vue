@@ -22,6 +22,9 @@
           <v-col class="ma-3 pa-3" cols="12">
             <h1 class="text-h2">{{ talk.title }}</h1>
             <p class="text-subtitle-1">{{ talk.description }}</p>
+            <p class="text-subtitle-1" v-if="talk.descriptionCont">
+              {{ talk.descriptionCont }}
+            </p>
           </v-col>
         </v-row>
         <v-row>
@@ -80,7 +83,7 @@ export default {
     }
   },
   head: {
-    title: "Home page",
+    title: "CeceliaCreates.com",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" }
